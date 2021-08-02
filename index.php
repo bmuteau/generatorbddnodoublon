@@ -75,7 +75,7 @@
         while ($valid == 0) {
             $safe += 1;
 
-            $sh = CodeHexa(2);
+            $sh = CodeHexa(16);
             $result = $dbco->query("SELECT * FROM codes WHERE code Like '$sh' ");
 
             if ($result->rowCount() == 0) {
